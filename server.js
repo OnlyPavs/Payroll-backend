@@ -12,20 +12,23 @@ const app = express();
 app.disable('etag');
 
 // Configure port
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 // Passport Config
 require('./config/passport.local')(passport);
 
 // DB Config
 mongoose
-	.connect(process.env.mongoURI || require('./config/keys').mongoURI, {
+	.connect(process.env.mongoURI, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 		useFindAndModify: false,
 	})
 	.then(() => console.log('MongoDB database connection established successfully'))
-	.catch((err) => console.log(err));
+	.catch((err) => {
+		console.log(process.env.mongoURI);
+		console.log(err)
+	});
 
 // Express body parser
 app.use(cors());

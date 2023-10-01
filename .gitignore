@@ -1,4 +1,4 @@
-# No modules
-node_modules
-
-config/keys.js
+# Node modules
+/node_modules
+/.env
+/config/keys.js

@@ -15,7 +15,8 @@ import Logo from '../../../../images/logo/logo.svg';
 const useStyles = makeStyles((theme) => ({
   root: {
     boxShadow: 'none',
-    background: 'linear-gradient(to right bottom, #6200ea, #3f51b5)',
+    background: 'rgb(95,38,145);',
+  background: 'linear-gradient(90deg, rgba(95,38,145,1) 13%, rgba(255,0,108,1) 100%);'
   },
   flexGrow: {
     flexGrow: 1,
@@ -53,7 +54,7 @@ const Topbar = (props) => {
           <img className={classes.img} alt="Logo" src={Logo} />
         </RouterLink>
         <Typography className={classes.logo} color="inherit">
-          MERN-Payroll
+          PayTrack
         </Typography>
         <div className={classes.flexGrow} />
         <Hidden smDown>

@@ -18,10 +18,10 @@ const Footer = (props) => {
   return (
     <div {...rest} className={clsx(classes.root, className)}>
       <Typography variant="body2" color="textSecondary" align="center">
-        {'Copyright © '}
-        <Link color="inherit" href="https://fadhilnor.github.io/" target="_blank">
-          Fadhil Japar
-        </Link>{' '}
+        {' © '}
+        <Link color="inherit" href="https://github.com/OnlyPavs" target="_blank">
+        Made with love
+      </Link>{' '}
         {new Date().getFullYear()}
         {'.'}
       </Typography>

@@ -14,10 +14,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://fadhilnor.github.io/" target="_blank">
-        Fadhil Japar
-      </Link>{' '}
+      {'Made with love  '}
+      
       {new Date().getFullYear()}
       {'.'}
     </Typography>
